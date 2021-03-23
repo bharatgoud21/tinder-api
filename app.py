@@ -51,7 +51,7 @@ def signup():
 
 
 @app.route('/updateUser', methods=['POST'])
-def updateUser():
+def updateUser(uid,dit):
     dit = request.get_json(force=True)
 
     uid = dit['uid']
